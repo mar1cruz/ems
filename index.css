@@ -211,7 +211,7 @@ legend {
 }
 @media (min-width: 768px) {
   .demo-body {
-    padding: 92px 72px;
+    padding: 72px;
   }
 }
 
@@ -219,6 +219,11 @@ legend {
   width: 100%;
   object-fit: cover;
   border-radius: 0px 10px 10px 0px;
+}
+@media (max-width: 768px) {
+  .demo-image img {
+    border-radius: 0px 0px 10px 10px;
+  }
 }
 @media (min-width: 768px) {
   .demo-image {
