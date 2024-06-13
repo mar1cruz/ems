@@ -1,0 +1,115 @@
+.popup {
+  position: fixed;
+  display: none;
+
+  max-width: 500px;
+  width: 100%;
+  padding: 24px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #f0f4fc;
+
+  &.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .close-btn {
+    position: relative;
+    margin-left: auto;
+    width: 52px;
+    height: 52px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 4px;
+
+    &::before {
+      content: url("./assets/x.svg");
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .popup-title {
+    color: #323232;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 18px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      border-radius: 10px;
+      background: #d7e2f6;
+      padding: 24px;
+
+      &::placeholder {
+        color: #1f4284;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+
+    .email {
+      margin-bottom: 4px;
+    }
+
+    .password {
+      margin-bottom: 24px;
+    }
+
+    .label-checkbox {
+      display: flex;
+      gap: 6px;
+      color: #323232;
+      font-size: 18px;
+      margin-bottom: 24px;
+      width: fit-content;
+    }
+
+    .checkbox {
+      width: 24px;
+      height: 24px;
+    }
+
+    .restore {
+      text-align: left;
+      color: #244c98;
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 36px;
+    }
+
+    .entrance {
+      border-radius: 4px;
+      background: #244c98;
+
+      padding: 18px 12px;
+      margin-bottom: 4px;
+
+      color: #fff;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 160%;
+    }
+
+    .registration {
+      padding: 18px 12px;
+
+      color: #244c98;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 160%;
+      border-radius: 4px;
+      border: 1px solid #244c98;
+    }
+  }
+}

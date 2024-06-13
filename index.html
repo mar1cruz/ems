@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="container demo">
+        <div class="demo-body">
+          <h1 class="body-title">Демо-версия</h1>
+          <p class="body-text">
+            За 18 лет деятельности было реализовано более 500 крупных, а так же,
+            не менее 2500 средних и малых проектов. Используя знания и
+            накопленный опыт мы можем предложить
+          </p>
+          <a href="#" class="button-link">
+            <div class="button-body">
+              <p class="button-text">Попробовать бесплатно</p>
+              <div class="button-image">
+                <img src="./assets/arrow.svg" alt="" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="demo-image">
+          <picture>
+            <source srcset="./assets/image.webp" />
+            <source srcset="./assets/image@2x.png" />
+            <img src="assets/image@1x.png" alt="" />
+          </picture>
+        </div>
+      </section>
+    </main>
+
+    <div class="popup active">
+      <button class="close-btn"></button>
+      <p class="popup-title">Войти в систему</p>
+      <form class="form">
+        <input class="email" type="email" placeholder="Email/Телефон" />
+        <input class="password" type="password" placeholder="Пароль" />
+        <label class="label-checkbox" for="checkbox">
+          <input class="checkbox" type="checkbox" id="checkbox" /> Запомнить
+          пароль
+        </label>
+
+        <button class="restore">Восстановить</button>
+        <button class="entrance">Войти</button>
+        <button class="registration">Зарегестрироваться</button>
+      </form>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>

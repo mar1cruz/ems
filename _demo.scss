@@ -1,0 +1,138 @@
+.demo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #ebf0fa;
+  border-radius: 10px;
+
+  @media (max-width: 1439.78px) {
+    flex-direction: column;
+  }
+}
+
+.demo-body {
+  max-width: 538px;
+  width: 100%;
+
+  .body-title {
+    color: #1f4284;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 160%;
+    margin-bottom: 18px;
+
+    @media (min-width: 1439.98px) {
+      font-size: 26px;
+    }
+
+    @media (max-width: 767.98px) {
+      margin-bottom: 14px;
+      font-size: 17px;
+    }
+  }
+
+  .body-text {
+    max-width: 511px;
+    width: 100%;
+
+    color: #727272;
+    font-family: Manrope;
+    font-size: 17px;
+    line-height: 160%;
+    margin-bottom: 36px;
+
+    @media (max-width: 1440px) {
+      max-width: 100%;
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: 767.98px) {
+      margin-bottom: 18px;
+      font-size: 13px;
+    }
+  }
+
+  .button-link {
+    color: white;
+    display: inline-block;
+    width: fit-content;
+
+    &:visited {
+      color: white;
+    }
+
+    .button-body {
+      max-width: 341px;
+      width: 100%;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 12px 12px 12px 24px;
+      gap: 48px;
+      border-radius: 60px;
+      background: #244c98;
+
+      @media (max-width: 1440px) {
+        max-width: 261px;
+        padding: 10px 10px 10px 18px;
+        gap: 19px;
+      }
+    }
+
+    .button-text {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 160%;
+
+      @media (max-width: 1440px) {
+        font-size: 15px;
+      }
+    }
+
+    .button-image {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (max-width: 1440px) {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  @media (max-width: 1440px) {
+    padding: 24px 24px 24px 24px;
+    max-width: 100%;
+  }
+
+  @media (max-width: 767.98px) {
+    padding: 24px 24px 18px 24px;
+  }
+}
+
+.demo-image {
+  img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0px 10px 10px 0px;
+
+    @media (min-width: 768px) {
+      max-width: 680px;
+    }
+
+    @media (min-width: 1440px) {
+      max-width: 910px;
+      width: 100%;
+      height: 360px;
+    }
+  }
+}
