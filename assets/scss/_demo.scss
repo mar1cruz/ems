@@ -117,6 +117,11 @@
   @media (max-width: 767.98px) {
     padding: 24px 24px 18px 24px;
   }
+
+  @media (min-width: 768px) {
+    padding: 92px 72px;
+  }
+
 }
 
 .demo-image {
@@ -124,15 +129,13 @@
     width: 100%;
     object-fit: cover;
     border-radius: 0px 10px 10px 0px;
+  }
 
-    @media (min-width: 768px) {
-      max-width: 680px;
-    }
+  @media (min-width: 768px) {
+    max-width: 680px;
+  }
 
-    @media (min-width: 1440px) {
-      max-width: 910px;
-      width: 100%;
-      height: 360px;
-    }
+  @media (min-width: 1440px) {
+    max-width: 910px;
   }
 }
