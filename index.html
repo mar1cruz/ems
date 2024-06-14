@@ -1,76 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-   >
-    <title>Document</title>
-  </head>
-  <body>
-    <main>
-      <section class="container demo">
-        <div class="demo-body">
-          <h1 class="body-title">Демо-версия</h1>
-          <p class="body-text">
-            За 18 лет деятельности было реализовано более 500 крупных, а так же,
-            не менее 2500 средних и малых проектов. Используя знания и
-            накопленный опыт мы можем предложить
-          </p>
-          <a href="#" class="button-link">
-            <div class="button-body">
-              <p class="button-text">Попробовать бесплатно</p>
-              <div class="button-image">
-                <img src="./assets/img/arrow.svg" alt="arrow">
-              </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <section class="container demo">
+      <div class="demo-body">
+        <h1 class="body-title">Демо-версия</h1>
+        <p class="body-text">
+          За 18 лет деятельности было реализовано более 500 крупных, а так же,
+          не менее 2500 средних и малых проектов. Используя знания и
+          накопленный опыт мы можем предложить
+        </p>
+        <a href="#" class="button-link">
+          <div class="button-body">
+            <p class="button-text">Попробовать бесплатно</p>
+            <div class="button-image">
+              <img src="./assets/img/arrow.svg" alt="arrow">
             </div>
-          </a>
-        </div>
-        <div class="demo-image">
-          <picture>
-            <source
-              srcset="./assets/img/image.webp"
-              media="(min-width:1025px)"
-           >
-            <source
-              srcset="./assets/img/image@2x.png"
-              media="(max-width:1024px)"
-           >
-            <img
-              width="910"
-              height="455"
-              src="assets/img/image@1x.png"
-              alt="main-image"
-           >
-          </picture>
-        </div>
-      </section>
-    </main>
+          </div>
+        </a>
+      </div>
+      <div class="demo-image">
+        <picture>
+          <source srcset="./assets/img/image.webp" media="(min-width:1025px)">
+          <source srcset="./assets/img/image@2x.png" media="(max-width:1024px)">
+          <img width="910" height="456" src="assets/img/image@1x.png" alt="main-image">
+        </picture>
+      </div>
+    </section>
+  </main>
 
-    <div class="popup">
-      <button class="close-btn"></button>
-      <p class="popup-title">Войти в систему</p>
-      <form class="form">
-        <input class="email" type="email" placeholder="Email/Телефон">
-        <input class="password" type="password" placeholder="Пароль">
-        <label class="label-checkbox" for="checkbox">
-          <input class="checkbox" type="checkbox" id="checkbox"> Запомнить
-          пароль
-        </label>
+  <div class="popup">
+    <button class="close-btn"></button>
+    <p class="popup-title">Войти в систему</p>
+    <form class="form">
+      <input class="email" type="email" placeholder="Email/Телефон">
+      <input class="password" type="password" placeholder="Пароль">
+      <label class="label-checkbox" for="checkbox">
+        <input class="checkbox" type="checkbox" id="checkbox">
+        Запомнить пароль
+      </label>
 
-        <button class="restore">Восстановить</button>
-        <button class="entrance">Войти</button>
-        <button class="registration">Зарегестрироваться</button>
-      </form>
-    </div>
+      <button class="restore">Восстановить</button>
+      <button class="entrance">Войти</button>
+      <button class="registration">Зарегестрироваться</button>
+    </form>
+  </div>
 
-    <div class="overlay"></div>
+  <div class="overlay"></div>
 
-    <script src="./index.js"></script>
-  </body>
+  <script src="./index.js"></script>
+</body>
+
 </html>

@@ -104,7 +104,7 @@ legend {
 }
 
 .demo-body {
-  max-width: 538px;
+  max-width: 682px;
   width: 100%;
 }
 .demo-body .body-title {
@@ -134,7 +134,7 @@ legend {
   line-height: 160%;
   margin-bottom: 36px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1439.98px) {
   .demo-body .body-text {
     max-width: 100%;
     margin-bottom: 24px;
@@ -198,7 +198,7 @@ legend {
     height: 24px;
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1439.98px) {
   .demo-body {
     padding: 24px 24px 24px 24px;
     max-width: 100%;
@@ -206,7 +206,7 @@ legend {
 }
 @media (max-width: 767.98px) {
   .demo-body {
-    padding: 24px 24px 18px 24px;
+    padding: 24px;
   }
 }
 @media (min-width: 768px) {
@@ -216,6 +216,7 @@ legend {
 }
 
 .demo-image img {
+  max-height: 465px;
   width: 100%;
   object-fit: cover;
   border-radius: 0px 10px 10px 0px;
@@ -227,12 +228,7 @@ legend {
 }
 @media (min-width: 768px) {
   .demo-image {
-    max-width: 680px;
-  }
-}
-@media (min-width: 1440px) {
-  .demo-image {
-    max-width: 910px;
+    flex-basis: 50%;
   }
 }
 
